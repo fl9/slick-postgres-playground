@@ -12,7 +12,8 @@ libraryDependencies ++= Seq(
   ws,
   specs2 % Test,
   "com.typesafe.play" %% "play-slick" % "1.0.0",
-  "org.postgresql" % "postgresql" % "9.4-1200-jdbc4"
+  "org.postgresql" % "postgresql" % "9.4-1200-jdbc4",
+  evolutions
 )
 
 resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"

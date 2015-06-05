@@ -5,7 +5,7 @@ import models.User
 import tables.UserTable
 
 object UserRepository extends UserTable {
-  val db = Database.forConfig("testdb")
+  val db = Database.forConfig("db.testdb")
   val users = TableQuery[Users]
 
   def insert(user: User) = {
