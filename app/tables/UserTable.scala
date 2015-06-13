@@ -1,7 +1,7 @@
 package tables
 
-import models.User
 import slick.driver.PostgresDriver.api._
+import models.User
 
 trait UserTable {
   class Users(tag: Tag) extends Table[User](tag, "users") {
@@ -10,4 +10,6 @@ trait UserTable {
     def * =
       (id.?, name) <> (User.tupled, User.unapply)
   }
+
+  val users = TableQuery[Users]
 }

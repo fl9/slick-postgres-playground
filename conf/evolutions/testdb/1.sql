@@ -3,8 +3,8 @@
 # --- !Ups
 
 CREATE TABLE "users" (
-    id bigserial primary key,
-    name varchar(255) not null
+  id bigserial primary key,
+  name varchar(255) not null
 );
 
 # --- !Downs
