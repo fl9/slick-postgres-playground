@@ -9,7 +9,7 @@ import repositories.UserRepository
 class Application extends Controller {
 
   def index = Action {
-    UserRepository.insert(User(Some(1), "testtest"))
+    UserRepository.insert(User(Some(1), "testtest", "bla", "blaa"))
     Ok(views.html.index("Your new application is ready."))
   }
 

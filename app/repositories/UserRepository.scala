@@ -22,4 +22,8 @@ object UserRepository extends UserTable {
       users.insert(user)
     }
   }
+
+  def findByEmail(email: String) : Option[User] = {
+    
+  }
 }
