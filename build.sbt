@@ -15,6 +15,11 @@ libraryDependencies ++= Seq(
   "org.postgresql" % "postgresql" % "9.4-1200-jdbc4"
 )
 
+libraryDependencies ++= Seq(
+  "org.webjars" %% "webjars-play" % "2.4.0-1",
+  "org.webjars" % "react" % "0.13.3"
+)
+
 resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
 
 // Play provides two styles of routers, one expects its actions to be injected, the
