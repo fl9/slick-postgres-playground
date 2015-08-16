@@ -1,3 +1,3 @@
 package models
 
-case class User(id: Option[Int] = None, name: String)
+case class User(id: Option[Int] = None, email: String, password: String, salt: String)
